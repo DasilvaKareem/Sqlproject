@@ -53,13 +53,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li>
-                            <a href="add.html">Add</a>
+                            <a href="add">Add</a>
                         </li>
                         <li>
-                            <a href="search.html">Search</a>
+                            <a href="About">Search</a>
                         </li>
                         <li>
-                            <a href="modify.html">Modify</a>
+                            <a href="Contact">Modify</a>
                         </li>
                 </ul>
             </div>
