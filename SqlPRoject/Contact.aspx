@@ -87,6 +87,7 @@
   <div class="form-group">
     <label for="exampleInputPassword1">Cool Stuff</label>
     <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Enter tech info">
+      <input type="submit" id="submit" />
   </div>       
                 </div>
             </div>
