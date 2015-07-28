@@ -23,30 +23,29 @@
                      <h3>Add a tech</h3>
                      <div class="form-group">
     <label for="exampleInputEmail1">Tech Name</label>
-
-     <asp:TextBox runat="server"  class="form-control" id="TechName" placeholder="Enter tech Name"></asp:TextBox>
+    <input type="text" class="form-control" id="TechName" placeholder="Email">
+  
   
     <label for="exampleInputPassword1">Domain Name</label>
-    
-     <asp:TextBox runat="server"  class="form-control" id="DomainName" placeholder="Enter tech info"></asp:TextBox>
+    <input type="text" class="form-control" id="DomainName" placeholder="Enter tech info">
 
-    <asp:label runat="server" for="exampleInputPassword1">Category</asp:label>
-      <asp:TextBox runat="server"  class="form-control" id="Category" placeholder="Enter tech info"></asp:TextBox>
+    <label for="exampleInputPassword1">Category</label>
+    <input type="text" class="form-control" id="Category" placeholder="Enter tech info">
 
     <label for="exampleInputPassword1">Capability Name</label>
-   
-     <asp:TextBox runat="server"  class="form-control" id="Capability" placeholder="Enter tech info"></asp:TextBox>
+    <input type="text" class="form-control" id="Capability" placeholder="Enter tech info">
+
    <div class="checkbox">
     <label>
-      <asp:CheckBox runat="server" type="checkbox" /> Practioner gacing
+      <input type="checkbox"> Practioner gacing
     </label>
   </div>
 
     <label for="exampleInputPassword1">Service</label>
+    <input type="text" class="form-control" id="Service" placeholder="Enter tech info">
 
-     <asp:TextBox runat="server"  class="form-control" id="Service" placeholder="Enter tech info"></asp:TextBox>
     <label for="exampleInputPassword1">Vendor Name</label>
-     <asp:TextBox runat="server"  class="form-control" id="TextBox1" placeholder="Enter tech info"></asp:TextBox>
+    <input type="text" class="form-control" id="Vendor" placeholder="Enter tech info">
   <label>Status</label>    
   <select class="form-control" id="">
   <option>Current</option>
@@ -57,7 +56,7 @@
     
     
     <label for="exampleInputPassword1">Product Version</label>
-    <asp:TextBox runat="server"  class="form-control" id="ProductVersion" placeholder="Enter tech info"></asp:TextBox>
+    <input type="text" class="form-control" id="productVersion" placeholder="Enter tech info">
 
    <div class="checkbox">
     <label>
@@ -73,8 +72,7 @@
                     
                      <div class="form-group">
     <label for="exampleInputEmail1">Capiabilties Name</label>
-   
-     <asp:TextBox runat="server"  class="form-control" id="Capabilties" placeholder="Enter tech info"></asp:TextBox>
+    <input type="text" class="form-control" id="exampleInputEmail1"placeholder="Enter tech info">
   </div>
 
  
@@ -95,7 +93,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                   <asp:Button runat="server" value="Submit"  class="btn btn-block btn-primary center-block"></asp:Button>
+                    <button class="btn btn-block btn-primary center-block">WHAT ARE THOOSE</button>
                     </form>
                 </div>
             </div>
