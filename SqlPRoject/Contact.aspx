@@ -1,4 +1,4 @@
-﻿<%@ Page EnableEventValidation="false" Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="SqlPRoject.Contact" %>
+﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="SqlPRoject.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
  <a name="about"></a>
@@ -18,9 +18,8 @@
 
             </div>
             <div class="row">
-                    <form>
                 <div class="col-lg-4">
-                
+                    <form>
                      <h3>Add a tech</h3>
                      <div class="form-group">
     <label for="exampleInputEmail1">Tech Name</label>
@@ -49,7 +48,7 @@
     <label for="exampleInputPassword1">Vendor Name</label>
      <asp:TextBox runat="server"  class="form-control" id="TextBox1" placeholder="Enter tech info"></asp:TextBox>
   <label>Status</label>    
-  <select class="form-control" id="dude">
+  <select class="form-control" id="">
   <option>Current</option>
   <option>Future</option>
   <option>New</option>
@@ -89,18 +88,18 @@
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Cool Stuff</label>
-    <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Enter tech info">&nbsp;
+    <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Enter tech info">
+      <input type="submit" id="submit" />
   </div>       
                 </div>
             </div>
-        
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <asp:Button runat="server" value="Submit"  class="btn btn-block btn-primary center-block"></asp:Button>
+                    </form>
+                </div>
+            </div>
             
             </div>
-            </form>
-     
-                <div class="col-lg-12 text-center">
-                    <asp:Button ID="Button1" runat="server" Text="Button"  class="btn btn-block btn-primary center-block" OnClick="Button1_Click" />
-                   
-                </div>
-    
+           
 </asp:Content>
