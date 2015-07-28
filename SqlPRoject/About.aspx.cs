@@ -9,16 +9,14 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
 
-
 namespace SqlPRoject
 {
-    public partial class Contact : Page
+    public partial class About : Page
     {
         
-     
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+            
         }
     }
 }
