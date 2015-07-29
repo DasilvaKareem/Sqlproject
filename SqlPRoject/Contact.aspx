@@ -1,6 +1,7 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="SqlPRoject.Contact" %>
+﻿<%@ Page Title="Contact" EnableEventValidation="true" Language="C#"  MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="SqlPRoject.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+   
  <a name="about"></a>
 
             <div class="container">
@@ -14,12 +15,13 @@
                            </div>
                     
 
-                </div>
-
             </div>
+               
             <div class="row">
+
+                </div>
                 <div class="col-lg-4">
-                    <form>
+                   
                      <h3>Add a tech</h3>
                      <div class="form-group">
     <label for="exampleInputEmail1">Tech Name</label>
@@ -28,25 +30,31 @@
   
     <label for="exampleInputPassword1">Domain Name</label>
     
-     <asp:TextBox runat="server"  class="form-control" id="DomainName" placeholder="Enter tech info"></asp:TextBox>
+     <asp:Label ID="Label3" runat="server" Text="Select a Domain"></asp:Label>
+        <asp:DropDownList class="form-control" ID="DropDownList5" runat="server" AutoPostBack="True"  OnSelectedIndexChanged="DropDownList5_SelectedIndexChanged" >
+            <asp:ListItem Value="-1">Choose Domain</asp:ListItem>
+        </asp:DropDownList>
 
-    <asp:label runat="server" for="exampleInputPassword1">Category</asp:label>
-      <asp:TextBox runat="server"  class="form-control" id="Category" placeholder="Enter tech info"></asp:TextBox>
+     <asp:Label ID="Label1" runat="server" Text="Select a Vendor"></asp:Label>
+        <asp:DropDownList class="form-control" ID="DropDownList1" runat="server" AutoPostBack="True" >
+            <asp:ListItem Value="-1">Choose Vendor</asp:ListItem>
+        </asp:DropDownList>
 
-    <label for="exampleInputPassword1">Capability Name</label>
+        <asp:Label ID="Label2" runat="server" Text="Select a Service"></asp:Label>
+        <asp:DropDownList class="form-control" ID="DropDownList2" runat="server" AutoPostBack="True" >
+            <asp:ListItem Value="-1">Choose Service</asp:ListItem>
+        </asp:DropDownList>
+
+
    
-     <asp:TextBox runat="server"  class="form-control" id="Capability" placeholder="Enter tech info"></asp:TextBox>
    <div class="checkbox">
     <label>
       <asp:CheckBox runat="server" type="checkbox" /> Practioner gacing
     </label>
   </div>
 
-    <label for="exampleInputPassword1">Service</label>
-
-     <asp:TextBox runat="server"  class="form-control" id="Service" placeholder="Enter tech info"></asp:TextBox>
-    <label for="exampleInputPassword1">Vendor Name</label>
-     <asp:TextBox runat="server"  class="form-control" id="TextBox1" placeholder="Enter tech info"></asp:TextBox>
+    
+  
   <label>Status</label>    
   <select class="form-control" id="">
   <option>Current</option>
@@ -54,6 +62,17 @@
   <option>New</option>
    <option>Retired</option>
 </select>
+
+  <asp:SqlDataSource ID="SqlDataSource1" runat="server" ></asp:SqlDataSource>
+
+        Category:
+        <asp:DropDownList ID="DropDownList3" runat="server" Class="form-control"  DataTextField="Category" DataValueField="Category" AppendDataBoundItems="true">
+        </asp:DropDownList>
+ 
+        Capability: 
+        <asp:DropDownList ID="DropDownList4" runat="server" class="form-control"  DataTextField="CapabilityName" DataValueField="CapabilityID" AppendDataBoundItems="true">
+        </asp:DropDownList>
+       
     
     
     <label for="exampleInputPassword1">Product Version</label>
@@ -65,41 +84,16 @@
     </label>
   </div>
   </div>
- 
-                    
-                </div>
-                <div class="col-lg-4">
-                <h3>Add a Capibalties</h3>
-                    
-                     <div class="form-group">
-    <label for="exampleInputEmail1">Capiabilties Name</label>
-   
-     <asp:TextBox runat="server"  class="form-control" id="Capabilties" placeholder="Enter tech info"></asp:TextBox>
-  </div>
-
- 
-                    
-                </div>
-                <div class="col-lg-4">
-                    <h3>Add a vendor</h3>
-                     <div class="form-group">
-    <label for="exampleInputEmail1">Vendor Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1"placeholder="Enter tech info">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Cool Stuff</label>
-    <input type="text" class="form-control" id="exampleInputPassword1"placeholder="Enter tech info">
-      <input type="submit" id="submit" />
-  </div>       
-                </div>
-            </div>
-            <div class="row">
+                              <div class="row">
                 <div class="col-lg-12 text-center">
-                   <asp:Button runat="server" value="Submit"  class="btn btn-block btn-primary center-block"></asp:Button>
-                    </form>
+                   <asp:Button runat="server" value="Submit"  class="btn btn-block btn-primary center-block" OnClick="Unnamed3_Click"></asp:Button> 
                 </div>
             </div>
+  
+                    
+      
             
             </div>
            
+    </div>
 </asp:Content>
