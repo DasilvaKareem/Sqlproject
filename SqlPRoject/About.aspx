@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="intro-message">
-                            <h2>Search for a Vendor or Technology</h2>
+                            <h2>Search for a Vendor or Technology, capabitlity</h2>
 
                             <hr class="intro-divider">
                             <form class="form-group">
